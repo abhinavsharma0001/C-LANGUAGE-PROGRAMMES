@@ -1,3 +1,5 @@
+//write a program to find if a character entered by user is uppercase or not
+
 #include <stdio.h>
 
 
