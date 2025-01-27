@@ -1,0 +1,21 @@
+//Write a program to read radius value from the keyboard and calculate the area of circle
+and print the result both floating and exponential notation.
+#include <stdio.h>
+
+int main() {
+    float radius, area;
+
+    // Prompt the user to enter the radius
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    // Calculate the area of the circle
+    area = 3.14159 * radius * radius;
+
+    // Display the area in both floating-point and exponential notation
+    printf("The area of the circle is:%f\n",area);
+    printf("Floating-point notation: %.2f\n", area);
+    printf("Exponential notation: %.2e\n", area);
+
+    return 0;
+}
