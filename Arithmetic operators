@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum, difference, product, quotient, remainder;
+
+    // Input two numbers
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Arithmetic operations
+    sum = num1 + num2;           // Addition
+    difference = num1 - num2;    // Subtraction
+    product = num1 * num2;       // Multiplication
+    quotient = num1 / num2;      // Division
+    remainder = num1 % num2;     // Modulus
+
+    // Display results
+    printf("\nArithmetic Operations:\n");
+    printf("Sum: %d + %d = %d\n", num1, num2, sum);
+    printf("Difference: %d - %d = %d\n", num1, num2, difference);
+    printf("Product: %d * %d = %d\n", num1, num2, product);
+    printf("Quotient: %d / %d = %d\n", num1, num2, quotient);
+    printf("Remainder: %d %% %d = %d\n", num1, num2, remainder);
+
+    return 0;
+}
