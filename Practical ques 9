@@ -1,0 +1,28 @@
+// Write a program to read marks of a student in six subjects and print whether pass or fail
+
+#include <stdio.h>
+
+int main() {
+    int marks[6];
+    int i;
+    int pass = 1; // Assume the student has passed initially
+
+    printf("Enter marks in six subjects (out of 100):\n");
+    for (i = 0; i < 6; i++) {
+        printf("Subject %d: ", i + 1);
+        scanf("%d", &marks[i]);
+
+        // Check if marks are below passing criteria
+        if (marks[i] < 40) {
+            pass = 0; // Set to fail if any subject is below 40
+        }
+    }
+
+    if (pass) {
+        printf("\nThe student has passed all subjects.\n");
+    } else {
+        printf("\nThe student has failed in one or more subjects.\n");
+    }
+
+    return 0;
+}
