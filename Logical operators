@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 20, c = 0;
+
+    // Demonstrating the logical AND (&&) operator
+    if (a > 5 && b > 15) {
+        printf("Logical AND (&&): Both conditions are true.\n");
+    } else {
+        printf("Logical AND (&&): At least one condition is false.\n");
+    }
+
+    // Demonstrating the logical OR (||) operator
+    if (a < 5 || b > 15) {
+        printf("Logical OR (||): At least one condition is true.\n");
+    } else {
+        printf("Logical OR (||): Both conditions are false.\n");
+    }
+
+    // Demonstrating the logical NOT (!) operator
+    if (!c) {
+        printf("Logical NOT (!): c is false (0).\n");
+    } else {
+        printf("Logical NOT (!): c is true (non-zero).\n");
+    }
+
+    return 0;
+}
