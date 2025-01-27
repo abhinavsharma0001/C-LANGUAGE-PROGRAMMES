@@ -1,0 +1,45 @@
+//Write a program for computing volume of cylinder, sphere and cone assume that
+dimensions are integer’s use typecasting where ever necessary.
+
+#include <stdio.h>
+#define PI 3.14159
+
+// Function to calculate the volume of the cylinder
+float cylinderVolume(int radius, int height) {
+    return PI * radius * radius * height;
+}
+
+// Function to calculate the volume of the sphere
+float sphereVolume(int radius) {
+    return (4.0 / 3.0) * PI * radius * radius * radius;
+}
+
+// Function to calculate the volume of the cone
+float coneVolume(int radius, int height) {
+    return (1.0 / 3.0) * PI * radius * radius * height;
+}
+
+int main() {
+    int radius, height;
+    float volume;
+
+    // Input for Cylinder
+    printf("Enter the radius and height of the cylinder: ");
+    scanf("%d %d", &radius, &height);
+    volume = cylinderVolume(radius, height);
+    printf("Volume of the cylinder: %.2f\n", volume);
+
+    // Input for Sphere
+    printf("Enter the radius of the sphere: ");
+    scanf("%d", &radius);
+    volume = sphereVolume(radius);
+    printf("Volume of the sphere: %.2f\n", volume);
+
+    // Input for Cone
+    printf("Enter the radius and height of the cone: ");
+    scanf("%d %d", &radius, &height);
+    volume = coneVolume(radius, height);
+    printf("Volume of the cone: %.2f\n", volume);
+
+    return 0;
+}
