@@ -1,7 +1,7 @@
-//Write a program to convert temperature. (Fahrenheit-centigrade and vice-ver
+//Write a program to convert temperature. (Fahrenheit-centigrade and vice-versa
 
 
-include <stdio.h>
+#include <stdio.h>
 
 // Function to convert Fahrenheit to Celsius
 float fahrenheitToCelsius(float fahrenheit) {
