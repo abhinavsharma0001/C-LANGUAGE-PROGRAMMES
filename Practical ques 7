@@ -1,0 +1,18 @@
+//Write a program to check equivalence of two number’s using conditional operator.
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    // Input two numbers
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Check equivalence using conditional operator
+    (num1 == num2) ? printf("The numbers are equal.\n") : printf("The numbers are not equal.\n");
+
+    return 0;
+}
