@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <conio.h>
+
+// Function to swap two numbers using pointers
+void swap(int a, int b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+// Function to display an array using pointers
+void displayArray(int arr, int size)
+{
+    printf("Array elements are: ");
+    for (int i = 0; i < size; i++) 
+    {
+        printf("%d ", (arr + i));
+    }
+    printf("\n");
+}
+
+int main()
+{
+
+    int num1, num2;
+    printf("Enter two numbers to swap:\n");
+    scanf("%d %d", &num1, &num2);
+
+    printf("Before swapping: num1 = %d, num2 = %d\n", num1, num2);
+    swap(&num1, &num2); 
+    printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
+
+
+    int size;
+    printf("\nEnter the size of the array: ");
+    scanf("%d", &size);
+
+    int arr[size];
+    printf("Enter %d elements of the array:\n", size);
+    for (int i = 0; i < size; i++) 
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    displayArray(arr, size); 
+
+    return 0;
+}
