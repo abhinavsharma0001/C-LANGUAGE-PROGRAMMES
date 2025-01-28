@@ -1,0 +1,66 @@
+//program on parametrized and default function
+
+//calculator
+#include <stdio.h>
+#include <conio.h>
+void sum(int x,int y)
+{
+     int z;
+     z=x+y;
+     printf("Sum : %d\n",z);
+}
+void diff(int x,int y)
+{
+     int z;
+     z=x-y;
+       printf("Difference : %d\n",z);
+}
+void mult(int x,int y)
+{
+     int z;
+     z=x*y;
+     printf("Product : %d\n",z);
+}
+void div(int x,int y)
+{
+     float z;
+     z=x/y;
+     printf("Division : %.2f\n",z);
+}
+int main()
+{
+      int a,b;
+     printf("Enter Two Numbers\n");
+     scanf("%d", &a);
+     scanf("%d",&b);
+     sum(a,b);
+     diff(a,b);
+     mult(a,b);
+     div(a,b);
+     return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int x=12,y=23; 
+void exchange()
+{
+     int t;
+     printf("\nValues Before Exchange x=%d, y=%d\n",x,y);
+     t=x;
+     x=y;
+     y=t;
+     printf("\nValues After Excahnge x=%d, y=%d",x,y) ;
+}
+int main()
+{
+     printf("Enter Value for x : ");
+     scanf("%d",&x);
+     printf("\nEnter Value for y : ");
+     scanf("%d",&y);
+     exchange();
+}
