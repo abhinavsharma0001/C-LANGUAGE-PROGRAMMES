@@ -14,8 +14,6 @@ int main() {
 
     // Display the area in both floating-point and exponential notation
     printf("The area of the circle is:%f\n",area);
-    printf("Floating-point notation: %.2f\n", area);
-    printf("Exponential notation: %.2e\n", area);
-
+  
     return 0;
 }
