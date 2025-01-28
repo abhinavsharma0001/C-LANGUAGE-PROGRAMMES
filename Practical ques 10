@@ -1,0 +1,49 @@
+//Write a program to calculate roots of quadratic equations.
+
+
+#include <stdio.h>
+#include <math.h>
+
+// Function to calculate roots
+void calculateRoots(double a, double b, double c) {
+    double determinant = b * b - 4 * a * c;
+
+    // Check if roots are real or complex
+    if (determinant >= 0) {
+        double root1 = (-b + sqrt(determinant)) / (2 * a);
+        double root2 = (-b - sqrt(determinant)) / (2 * a);
+
+        // Check if roots are equal
+        if (root1 == root2) {
+            printf("Roots are equal: %.2f\n", root1);
+        } else {
+            printf("Roots are real and distinct: %.2f and %.2f\n", root1, root2);
+        }
+    } else {
+        double realPart = -b / (2 * a);
+        double imaginaryPart = sqrt(-determinant) / (2 * a);
+
+        printf("Roots are complex: %.2f + %.2fi and %.2f - %.2fi\n", realPart, imaginaryPart, realPart, imaginaryPart);
+    }
+}
+
+int main() {
+    double a, b, c;
+
+    // Input coefficients
+    printf("Enter coefficient a: ");
+    scanf("%lf", &a);
+    printf("Enter coefficient b: ");
+    scanf("%lf", &b);
+    printf("Enter coefficient c: ");
+    scanf("%lf", &c);
+
+    // Check if equation is quadratic
+    if (a == 0) {
+        printf("Not a quadratic equation.\n");
+    } else {
+        calculateRoots(a, b, c);
+    }
+
+    return 0;
+}
